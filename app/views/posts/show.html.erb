@@ -1,0 +1,9 @@
+<h2> mira este post </h2>
+<% @post.title %>
+<br>
+<% @post.description %>
+<br>
+<% @post.media_url %>
+
+<%= link_to 'editar este pos', edit_post_path(@post) %>
+<%= button_to 'borrar este post', @Post, method: :delete %>
